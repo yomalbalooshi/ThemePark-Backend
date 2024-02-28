@@ -8,7 +8,7 @@ const zoneSchema = new Schema(
     x: Number,
     y: Number,
     imageUrl: { type: String },
-    attractions: [{ type: Schema.Types.ObjectId, ref: 'attraction' }]
+    attractions: [{ type: Schema.Types.ObjectId, ref: 'Attraction' }]
   },
   {
     timestamps: true
