@@ -13,6 +13,7 @@ const authRouter = require('./routes/AuthRoutes')
 const zoneRouter = require('./routes/zones')
 const attractionRouter = require('./routes/attractions')
 const ticketRouter = require('./routes/tickets')
+const eventRouter = require('./routes/events')
 
 var app = express()
 
@@ -33,6 +34,7 @@ app.use('/auth', authRouter)
 app.use('/zones', zoneRouter)
 app.use('/attractions', attractionRouter)
 app.use('/tickets', ticketRouter)
+app.use('/events', eventRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
