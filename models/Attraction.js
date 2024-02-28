@@ -6,7 +6,8 @@ const attractionSchema = new Schema(
     description: { type: String },
     x: Number,
     y: Number,
-    imageUrl: { type: String }
+    r: Number,
+    image: { type: String }
   },
   {
     timestamps: true
