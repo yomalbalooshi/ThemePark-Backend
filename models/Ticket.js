@@ -12,3 +12,4 @@ const ticketSchema = new Schema(
     timestamps: true
   }
 )
+module.exports = ticketSchema

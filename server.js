@@ -12,6 +12,7 @@ var usersRouter = require('./routes/users')
 const authRouter = require('./routes/AuthRoutes')
 const zoneRouter = require('./routes/zones')
 const attractionRouter = require('./routes/attractions')
+const ticketRouter = require('./routes/tickets')
 
 var app = express()
 
@@ -31,6 +32,7 @@ app.use('/users', usersRouter)
 app.use('/auth', authRouter)
 app.use('/zones', zoneRouter)
 app.use('/attractions', attractionRouter)
+app.use('/tickets', ticketRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
