@@ -10,4 +10,11 @@ router.post(
   ticketsCtrl.create
 )
 
+router.delete(
+  '/:id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  ticketsCtrl.delete
+)
+
 module.exports = router
