@@ -12,6 +12,16 @@ const create = async (req, res) => {
   }
 }
 
+const deleteTicket = async (req, res) => {
+  try {
+    const ticket = await Ticket.findById(req.params.id)
+    res.send(await ticket.deleteOne())
+  } catch (error) {
+    console.log(error)
+  }
+}
+
 module.exports = {
-  create
+  create,
+  delete: deleteTicket
 }
