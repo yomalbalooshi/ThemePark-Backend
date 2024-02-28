@@ -1,5 +1,12 @@
 const { Ticket, User } = require('../models')
 
+const index = (async = async (req, res) => {
+  const tickets = await Ticket.find({ user: req.params.userId }).populate(
+    'zone'
+  )
+  res.send(tickets)
+})
+
 const create = async (req, res) => {
   try {
     const user = await User.findById(res.locals.payload.id)
@@ -23,5 +30,6 @@ const deleteTicket = async (req, res) => {
 
 module.exports = {
   create,
-  delete: deleteTicket
+  delete: deleteTicket,
+  index
 }

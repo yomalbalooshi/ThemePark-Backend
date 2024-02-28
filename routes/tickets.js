@@ -3,6 +3,7 @@ const router = express.Router()
 
 const ticketsCtrl = require('../controllers/TicketsController')
 const middleware = require('../middleware')
+router.get('/:userId', ticketsCtrl.index)
 router.post(
   '/',
   middleware.stripToken,
