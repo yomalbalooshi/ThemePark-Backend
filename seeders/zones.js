@@ -18,28 +18,32 @@ const createZones = async () => {
       openingTime: '8:00',
       closingTime: '16:00',
       x: 100,
-      y: 100
+      y: 100,
+      price: 10
     },
     {
       name: 'Kidtopia',
       openingTime: '8:00',
       closingTime: '16:00',
       x: 100,
-      y: 100
+      y: 100,
+      price: 20
     },
     {
       name: 'Kingdom of Dreams',
       openingTime: '8:00',
       closingTime: '16:00',
       x: 100,
-      y: 100
+      y: 100,
+      price: 30
     },
     {
       name: 'Tropical Tides',
       openingTime: '8:00',
       closingTime: '16:00',
       x: 100,
-      y: 100
+      y: 100,
+      price: 40
     }
   ]
 
